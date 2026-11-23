@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>João Vitor Widal | Desenvolvedor Backend C#/.NET</title>
+  <meta name="description" content="Portfólio profissional de João Vitor de Campos Widal Sanchez, desenvolvedor de software com foco em backend, C#, ASP.NET Core e SQL Server em Campo Grande — MS.">
+  <meta name="author" content="João Vitor de Campos Widal Sanchez">
+  <meta name="theme-color" content="#0B1120">
+
+  <!-- Open Graph / Compartilhamento básico (sem inventar domínio ou imagem) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="João Vitor Widal | Desenvolvedor Backend C#/.NET">
+  <meta property="og:description" content="Desenvolvedor de software com atuação em C#, ASP.NET Core e SQL Server, com trajetória integrada em suporte, infraestrutura e desenvolvimento de sistemas.">
+
+  <!-- Ícone relativo compatível com subdiretórios no GitHub Pages -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+  <!-- Tipografia Google Fonts com fallback seguro -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Folha de estilos principal -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#conteudo-principal" class="skip-link" id="skip-to-content">Pular para o conteúdo principal</a>
+
+  <!-- A. Cabeçalho e navegação -->
+  <header class="site-header" id="topo">
+    <div class="container header-inner">
+      <a href="#topo" class="brand" id="brand-logo" aria-label="João Vitor Widal — Início">
+        <span class="brand-monogram" aria-hidden="true">JW</span>
+        <span class="brand-name">João Vitor Widal</span>
+      </a>
+
+      <button
+        type="button"
+        class="menu-toggle"
+        id="menu-toggle-btn"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+        aria-label="Abrir menu de navegação"
+      >
+        <svg class="icon-menu" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+        <svg class="icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <nav class="site-nav" id="primary-navigation" aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a href="#sobre" class="nav-link" id="nav-sobre">Sobre</a></li>
+          <li><a href="#competencias" class="nav-link" id="nav-competencias">Competências</a></li>
+          <li><a href="#experiencia" class="nav-link" id="nav-experiencia">Experiência</a></li>
+          <li id="nav-item-projetos" hidden><a href="#projetos" class="nav-link" id="nav-projetos">Projetos</a></li>
+          <li><a href="#formacao" class="nav-link" id="nav-formacao">Formação</a></li>
+          <li><a href="#contato" class="nav-link nav-link-cta" id="nav-contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo-principal">
+    <!-- B. Hero — apresentação principal -->
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="hero-role" id="hero-subtitle">Desenvolvedor de Software <span class="role-separator" aria-hidden="true">|</span> <span class="role-highlight">Backend C#/.NET</span></p>
+          <h1 class="hero-title" id="hero-title">João Vitor Widal</h1>
+          <p class="hero-description">
+            Atuo no desenvolvimento e manutenção de sistemas, com foco em <strong>C#</strong>, <strong>ASP.NET Core</strong> e <strong>SQL Server</strong>. Minha trajetória em suporte, infraestrutura e desenvolvimento contribui para uma visão integrada das necessidades dos usuários e das aplicações.
+          </p>
+
+          <ul class="hero-meta" aria-label="Informações complementares">
+            <li class="meta-item">
+              <svg class="meta-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Campo Grande — MS</span>
+            </li>
+            <li class="meta-item">
+              <svg class="meta-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+              <span>Experiência em TI desde 2021</span>
+            </li>
+            <li class="meta-item">
+              <svg class="meta-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+              <span>Atuação em desenvolvimento desde agosto de 2024</span>
+            </li>
+          </ul>
+
+          <div class="hero-actions">
+            <a href="#experiencia" class="btn btn-primary" id="btn-hero-trajetoria">
+              <span>Conheça minha trajetória</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="assets/curriculo.pdf" class="btn btn-secondary" id="btn-hero-curriculo" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Baixar currículo</span>
+            </a>
+            <a href="#contato" class="btn btn-ghost" id="btn-hero-contato">
+              <span>Entrar em contato</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Elemento visual em formato de código apenas com informações reais -->
+        <div class="hero-visual" aria-label="Representação em código C# do perfil profissional">
+          <div class="code-card">
+            <div class="code-card-header">
+              <div class="window-dots" aria-hidden="true">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <span class="code-filename">DeveloperProfile.cs</span>
+            </div>
+            <pre class="code-block"><code><span class="code-kw">namespace</span> <span class="code-ns">Portfolio.Backend</span>;
+
+<span class="code-kw">public sealed record</span> <span class="code-type">DeveloperProfile</span>(
+    <span class="code-type">string</span> Nome,
+    <span class="code-type">string</span> Localizacao,
+    <span class="code-type">string</span>[] StackPrincipal,
+    <span class="code-type">string</span>[] TecnologiasComplementares
+);
+
+<span class="code-kw">var</span> perfil = <span class="code-kw">new</span> <span class="code-type">DeveloperProfile</span>(
+    Nome: <span class="code-str">"João Vitor de Campos Widal Sanchez"</span>,
+    Localizacao: <span class="code-str">"Campo Grande — MS"</span>,
+    StackPrincipal: [<span class="code-str">"C#"</span>, <span class="code-str">"ASP.NET Core"</span>, <span class="code-str">"SQL Server"</span>],
+    TecnologiasComplementares: [<span class="code-str">"PHP"</span>, <span class="code-str">"JavaScript"</span>, <span class="code-str">"Docker"</span>, <span class="code-str">"Git"</span>]
+);</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- C. Sobre mim -->
+    <section id="sobre" class="section" aria-labelledby="sobre-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Apresentação</span>
+          <h2 class="section-title" id="sobre-title">Sobre mim</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Sou desenvolvedor de software com trajetória na área de Tecnologia da Informação desde 2021, construída na <strong>Universidade Católica Dom Bosco (UCDB)</strong>. Iniciei minha atuação como estagiário, passei pela função de Técnico de Apoio em Informática e, desde agosto de 2024, trabalho como Programador no Departamento de Tecnologia da Informação (DTI).
+            </p>
+            <p>
+              Ao longo desse percurso, desenvolvi experiência prática integrando suporte técnico, infraestrutura e desenvolvimento backend. Essa vivência nas diferentes camadas de TI permite compreender com clareza tanto o funcionamento do ambiente operacional quanto as demandas reais de quem utiliza os sistemas no dia a dia.
+            </p>
+            <p>
+              No desenvolvimento e manutenção de sistemas, trabalho com <strong>C#</strong>, <strong>ASP.NET Core</strong>, <strong>PHP</strong> e <strong>SQL Server</strong>, além de utilizar <strong>JavaScript</strong>, <strong>Docker</strong> e <strong>Git</strong> no fluxo de trabalho. Tenho perfil analítico, facilidade para diagnóstico e resolução de problemas, comunicação clara e colaboração em equipe. Busco contribuir continuamente para a evolução e manutenção de sistemas com organização, boas práticas de engenharia de software e automação de processos.
+            </p>
+          </div>
+
+          <aside class="about-highlights" aria-label="Resumo da trajetória">
+            <div class="highlight-card">
+              <div class="highlight-header">
+                <span class="monogram-badge" aria-hidden="true">JW</span>
+                <div>
+                  <h3 class="highlight-name">João Vitor de Campos Widal Sanchez</h3>
+                  <p class="highlight-sub">Campo Grande — MS</p>
+                </div>
+              </div>
+              <dl class="highlight-list">
+                <div class="highlight-row">
+                  <dt>Foco principal</dt>
+                  <dd>Backend C#, ASP.NET Core e SQL Server</dd>
+                </div>
+                <div class="highlight-row">
+                  <dt>Atuação atual</dt>
+                  <dd>Programador — UCDB (DTI)</dd>
+                </div>
+                <div class="highlight-row">
+                  <dt>Base técnica</dt>
+                  <dd>Desenvolvimento, banco de dados, infraestrutura e suporte</dd>
+                </div>
+                <div class="highlight-row">
+                  <dt>Formação</dt>
+                  <dd>Pós-graduação em Gestão de TI e Tecnólogo em ADS</dd>
+                </div>
+              </dl>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- D. Competências técnicas -->
+    <section id="competencias" class="section section-alt" aria-labelledby="competencias-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Stack &amp; Conhecimentos</span>
+          <h2 class="section-title" id="competencias-title">Competências técnicas</h2>
+          <p class="section-subtitle">
+            Tecnologias e conhecimentos organizados por área de atuação, com foco principal em desenvolvimento backend com C#, ASP.NET Core e SQL Server.
+          </p>
+        </div>
+
+        <!-- Destaque principal: C#, ASP.NET Core e SQL Server -->
+        <div class="core-stack-banner" aria-label="Tecnologias principais">
+          <div class="core-stack-label">
+            <span class="core-badge">Foco Principal</span>
+            <p>Tecnologias centrais no desenvolvimento e manutenção de aplicações e banco de dados</p>
+          </div>
+          <ul class="core-stack-pills">
+            <li class="core-pill">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+              <span>C#</span>
+            </li>
+            <li class="core-pill">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+              <span>ASP.NET Core</span>
+            </li>
+            <li class="core-pill">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+              <span>SQL Server</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Categoria 1: Desenvolvimento -->
+          <article class="skill-card">
+            <div class="skill-card-header">
+              <span class="skill-icon-box" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </span>
+              <h3 class="skill-card-title">Desenvolvimento</h3>
+            </div>
+            <ul class="skill-tags" aria-label="Competências de Desenvolvimento">
+              <li class="skill-tag skill-tag-featured">C# <span class="sr-only">(Tecnologia principal)</span></li>
+              <li class="skill-tag skill-tag-featured">ASP.NET Core <span class="sr-only">(Tecnologia principal)</span></li>
+              <li class="skill-tag">PHP</li>
+              <li class="skill-tag">JavaScript</li>
+            </ul>
+          </article>
+
+          <!-- Categoria 2: Banco de dados -->
+          <article class="skill-card">
+            <div class="skill-card-header">
+              <span class="skill-icon-box" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </span>
+              <h3 class="skill-card-title">Banco de dados</h3>
+            </div>
+            <ul class="skill-tags" aria-label="Competências de Banco de dados">
+              <li class="skill-tag skill-tag-featured">SQL Server <span class="sr-only">(Tecnologia principal)</span></li>
+              <li class="skill-tag">Consultas SQL e joins</li>
+              <li class="skill-tag">Modelagem e tratamento de dados</li>
+            </ul>
+          </article>
+
+          <!-- Categoria 3: Ferramentas e plataformas -->
+          <article class="skill-card">
+            <div class="skill-card-header">
+              <span class="skill-icon-box" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                  <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+              </span>
+              <h3 class="skill-card-title">Ferramentas e plataformas</h3>
+            </div>
+            <ul class="skill-tags" aria-label="Competências em Ferramentas e plataformas">
+              <li class="skill-tag">Git</li>
+              <li class="skill-tag">Docker</li>
+              <li class="skill-tag">Moodle</li>
+              <li class="skill-tag">Virtualização</li>
+            </ul>
+          </article>
+
+          <!-- Categoria 4: Infraestrutura e suporte -->
+          <article class="skill-card">
+            <div class="skill-card-header">
+              <span class="skill-icon-box" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </span>
+              <h3 class="skill-card-title">Infraestrutura e suporte</h3>
+            </div>
+            <ul class="skill-tags" aria-label="Competências de Infraestrutura e suporte">
+              <li class="skill-tag">Administração de servidores</li>
+              <li class="skill-tag">Redes</li>
+              <li class="skill-tag">Suporte técnico</li>
+              <li class="skill-tag">Diagnóstico e resolução de problemas</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- E. Experiência profissional -->
+    <section id="experiencia" class="section" aria-labelledby="experiencia-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Trajetória na UCDB</span>
+          <h2 class="section-title" id="experiencia-title">Experiência profissional</h2>
+          <p class="section-subtitle">
+            Evolução de atuação no Departamento de Tecnologia da Informação (DTI) da Universidade Católica Dom Bosco, desde o estágio até o desenvolvimento de sistemas.
+          </p>
+        </div>
+
+        <ol class="timeline" aria-label="Linha do tempo de experiência profissional">
+          <!-- Cargo 1: Programador -->
+          <li class="timeline-item timeline-item-current">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <article class="timeline-card">
+              <div class="timeline-card-header">
+                <div>
+                  <span class="timeline-badge">Atuação atual</span>
+                  <h3 class="timeline-role">Programador</h3>
+                  <p class="timeline-org">Universidade Católica Dom Bosco — DTI</p>
+                </div>
+                <time class="timeline-period" datetime="2024-08">Agosto de 2024 – Atual</time>
+              </div>
+              <ul class="timeline-duties">
+                <li>Desenvolvimento e manutenção de sistemas internos com C#, ASP.NET Core, PHP e SQL Server.</li>
+                <li>Implementação de melhorias em funcionalidades e correção de falhas.</li>
+                <li>Consultas SQL, joins e tratamento de dados para análise, integração e atendimento às demandas do negócio.</li>
+                <li>Colaboração com equipes de TI no levantamento de requisitos, testes e entrega de soluções.</li>
+                <li>Apoio à modernização e organização de processos técnicos.</li>
+              </ul>
+            </article>
+          </li>
+
+          <!-- Cargo 2: Técnico de Apoio em Informática -->
+          <li class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <article class="timeline-card">
+              <div class="timeline-card-header">
+                <div>
+                  <h3 class="timeline-role">Técnico de Apoio em Informática</h3>
+                  <p class="timeline-org">Universidade Católica Dom Bosco — DTI</p>
+                </div>
+                <time class="timeline-period" datetime="2022-11/2024-08">Novembro de 2022 – Agosto de 2024</time>
+              </div>
+              <ul class="timeline-duties">
+                <li>Suporte técnico a usuários, sistemas e infraestrutura de TI.</li>
+                <li>Diagnóstico e resolução de incidentes de hardware, software, redes e acessos.</li>
+                <li>Apoio na administração e configuração de ambientes e ferramentas.</li>
+                <li>Documentação, padronização e melhoria de processos de atendimento.</li>
+                <li>Apoio à continuidade das operações de TI.</li>
+              </ul>
+            </article>
+          </li>
+
+          <!-- Cargo 3: Estagiário -->
+          <li class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <article class="timeline-card">
+              <div class="timeline-card-header">
+                <div>
+                  <h3 class="timeline-role">Estagiário</h3>
+                  <p class="timeline-org">Universidade Católica Dom Bosco — DTI</p>
+                </div>
+                <time class="timeline-period" datetime="2021-09/2022-11">Setembro de 2021 – Novembro de 2022</time>
+              </div>
+              <ul class="timeline-duties">
+                <li>Suporte técnico, manutenção de equipamentos e atendimento a usuários.</li>
+                <li>Apoio em rotinas de infraestrutura e configuração de sistemas institucionais.</li>
+                <li>Participação em demandas operacionais e projetos internos do departamento.</li>
+              </ul>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- F. Projetos (Oculta por padrão até que projetos reais sejam cadastrados em js/main.js) -->
+    <section id="projetos" class="section section-alt" aria-labelledby="projetos-title" hidden>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Portfólio Técnico</span>
+          <h2 class="section-title" id="projetos-title">Projetos</h2>
+          <p class="section-subtitle">
+            Projetos públicos e estudos práticos desenvolvidos.
+          </p>
+        </div>
+
+        <div class="projects-grid" id="projects-container">
+          <!-- Renderizado dinamicamente via js/main.js apenas quando houver projetos cadastrados -->
+        </div>
+      </div>
+    </section>
+
+    <!-- G. Formação acadêmica & H. Cursos, certificações e idiomas -->
+    <section id="formacao" class="section section-alt" aria-labelledby="formacao-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Qualificação</span>
+          <h2 class="section-title" id="formacao-title">Formação acadêmica</h2>
+        </div>
+
+        <!-- G. Formação acadêmica -->
+        <div class="education-grid">
+          <article class="edu-card">
+            <div class="edu-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <div class="edu-body">
+              <span class="edu-period">Concluída em 2025</span>
+              <h3 class="edu-degree">Pós-graduação em Gestão da Tecnologia da Informação</h3>
+              <p class="edu-institution">Universidade Católica Dom Bosco</p>
+            </div>
+          </article>
+
+          <article class="edu-card">
+            <div class="edu-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <div class="edu-body">
+              <span class="edu-period">2021 – 2024</span>
+              <h3 class="edu-degree">Tecnólogo em Análise e Desenvolvimento de Sistemas</h3>
+              <p class="edu-institution">Universidade Católica Dom Bosco</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- H. Cursos e certificações + Idiomas -->
+        <div class="complementary-grid">
+          <div class="courses-block">
+            <h3 class="subsection-title" id="cursos-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+              <span>Cursos e certificações</span>
+            </h3>
+            <ul class="courses-list" aria-labelledby="cursos-title">
+              <li class="course-item">
+                <span class="course-name">BluePex Endpoint Control e Protect Essentials</span>
+                <span class="course-provider">BluePex Tecnologia S/A</span>
+              </li>
+              <li class="course-item">
+                <span class="course-name">Docker — Completo, do Zero ao Avançado</span>
+                <span class="course-provider">Udemy</span>
+              </li>
+              <li class="course-item">
+                <span class="course-name">Programação JavaScript — do Básico ao Avançado</span>
+                <span class="course-provider">Udemy</span>
+              </li>
+              <li class="course-item">
+                <span class="course-name">Curso de Inglês Rápido: do Básico à Fluência Sem Enrolação</span>
+                <span class="course-provider">Udemy</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="languages-block">
+            <h3 class="subsection-title" id="idiomas-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+              <span>Idiomas</span>
+            </h3>
+            <ul class="languages-list" aria-labelledby="idiomas-title">
+              <li class="language-item">
+                <span class="language-name">Português</span>
+                <span class="language-level">Nativo</span>
+              </li>
+              <li class="language-item">
+                <span class="language-name">Inglês</span>
+                <span class="language-level">Intermediário</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- I. Contato -->
+    <section id="contato" class="section" aria-labelledby="contato-title">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-info">
+            <span class="section-eyebrow">Contato</span>
+            <h2 class="section-title" id="contato-title">Vamos conversar?</h2>
+            <p class="contact-description">
+              Fique à vontade para entrar em contato para conversar sobre oportunidades profissionais, projetos de desenvolvimento ou trocar ideias sobre tecnologia e engenharia de software.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-detail-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <div>
+                  <span class="detail-label">E-mail</span>
+                  <a href="mailto:jvcws11@gmail.com" class="detail-value" id="link-email-text">jvcws11@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+                <div>
+                  <span class="detail-label">LinkedIn</span>
+                  <a href="https://www.linkedin.com/in/jv-widal" target="_blank" rel="noopener noreferrer" class="detail-value" id="link-linkedin-text">linkedin.com/in/jv-widal</a>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <div>
+                  <span class="detail-label">Localização</span>
+                  <span class="detail-value">Campo Grande — MS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-actions">
+            <a href="mailto:jvcws11@gmail.com" class="btn btn-primary btn-block" id="btn-contact-email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>Enviar e-mail</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/jv-widal" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-block" id="btn-contact-linkedin">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              <span>Conectar no LinkedIn</span>
+            </a>
+
+            <!-- Oculto até que uma URL válida do GitHub seja configurada em js/main.js -->
+            <a href="" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-block" id="btn-contact-github" hidden>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+              <span>Acessar GitHub</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- J. Rodapé -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">
+        &copy; <span id="current-year">2026</span> <strong>João Vitor Widal</strong>. Todos os direitos reservados.
+      </p>
+      <a href="#topo" class="back-to-top" id="link-back-to-top">
+        <span>Voltar ao topo</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="12" y1="19" x2="12" y2="5"></line>
+          <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Script principal -->
+  <script src="js/main.js"></script>
+</body>
+</html>
