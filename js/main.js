@@ -1,41 +1,10 @@
-/**
- * Portfólio Profissional — João Vitor de Campos Widal Sanchez
- * Script principal (JavaScript puro, sem dependências externas)
- */
-
-/* ==========================================================================
-   1. CONFIGURAÇÃO CENTRALIZADA DE DADOS OPCIONAIS
-   ========================================================================== */
-
 const PORTFOLIO_CONFIG = {
-  /**
-   * Endereço do perfil no GitHub.
-   * Mantenha vazio ("") enquanto não desejar exibir o botão do GitHub.
-   * Quando preenchido com uma URL válida (ex.: "https://github.com/seu-usuario"),
-   * o botão será exibido automaticamente na seção de Contato.
-   */
+  
   githubUrl: "",
 
-  /**
-   * Lista de projetos públicos.
-   * Enquanto este array estiver vazio ([]), tanto a seção "Projetos" quanto
-   * o item "Projetos" no menu de navegação permanecerão ocultos.
-   *
-   * Modelo de objeto para adicionar um projeto real:
-   * {
-   *   titulo: "Nome do Projeto",
-   *   descricao: "Descrição objetiva do problema resolvido e da arquitetura utilizada.",
-   *   tecnologias: ["C#", "ASP.NET Core", "SQL Server", "Docker"],
-   *   linkRepositorio: "https://github.com/seu-usuario/nome-do-repositorio",
-   *   linkDemonstracao: "" // Opcional: URL de demonstração ou deixe "" para não exibir o botão
-   * }
-   */
+  
   projetos: []
 };
-
-/* ==========================================================================
-   2. FUNÇÕES DE INICIALIZAÇÃO
-   ========================================================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
   atualizarAnoRodape();
@@ -45,9 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
   inicializarDestaqueNavegacao();
 });
 
-/**
- * Atualiza automaticamente o ano exibido no rodapé.
- */
 function atualizarAnoRodape() {
   const yearEl = document.getElementById("current-year");
   if (yearEl) {
@@ -55,11 +21,6 @@ function atualizarAnoRodape() {
   }
 }
 
-/**
- * Valida se uma string representa uma URL HTTP/HTTPS real (e não "#" ou vazio).
- * @param {string} url
- * @returns {boolean}
- */
 function isValidHttpUrl(url) {
   if (typeof url !== "string") return false;
   const trimmed = url.trim();
@@ -73,9 +34,6 @@ function isValidHttpUrl(url) {
   }
 }
 
-/**
- * Exibe o botão do GitHub na seção de Contato somente quando houver uma URL válida.
- */
 function configurarBotaoGithub() {
   const githubBtn = document.getElementById("btn-contact-github");
   if (!githubBtn) return;
@@ -89,10 +47,6 @@ function configurarBotaoGithub() {
   }
 }
 
-/**
- * Renderiza os cards de projetos e exibe a seção/item de menu
- * apenas quando existirem projetos reais válidos cadastrados.
- */
 function renderizarProjetos() {
   const secaoProjetos = document.getElementById("projetos");
   const navItemProjetos = document.getElementById("nav-item-projetos");
@@ -157,7 +111,7 @@ function renderizarProjetos() {
 
     card.appendChild(contentTop);
 
-    // Links do projeto (exibidos somente se tiverem URLs válidas)
+    
     const temRepoValido = isValidHttpUrl(projeto.linkRepositorio);
     const temDemoValida = isValidHttpUrl(projeto.linkDemonstracao);
 
@@ -207,9 +161,6 @@ function renderizarProjetos() {
   navItemProjetos.hidden = false;
 }
 
-/**
- * Controla a abertura, o fechamento e os atributos de acessibilidade do menu mobile.
- */
 function inicializarMenuMobile() {
   const toggleBtn = document.getElementById("menu-toggle-btn");
   const nav = document.getElementById("primary-navigation");
@@ -235,7 +186,7 @@ function inicializarMenuMobile() {
 
   toggleBtn.addEventListener("click", alternarMenu);
 
-  // Fecha o menu ao clicar em um link de navegação
+  
   const navLinks = nav.querySelectorAll(".nav-link");
   navLinks.forEach((link) => {
     link.addEventListener("click", () => {
@@ -245,7 +196,7 @@ function inicializarMenuMobile() {
     });
   });
 
-  // Fecha o menu ao pressionar a tecla Escape
+  
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape" && toggleBtn.getAttribute("aria-expanded") === "true") {
       fecharMenu();
@@ -253,7 +204,7 @@ function inicializarMenuMobile() {
     }
   });
 
-  // Ajusta estado ao redimensionar a tela
+  
   window.addEventListener("resize", () => {
     if (window.innerWidth > 768 && toggleBtn.getAttribute("aria-expanded") === "true") {
       fecharMenu();
@@ -261,9 +212,6 @@ function inicializarMenuMobile() {
   });
 }
 
-/**
- * Destaca o item do menu correspondente à seção visível na tela.
- */
 function inicializarDestaqueNavegacao() {
   if (!("IntersectionObserver" in window)) return;
 

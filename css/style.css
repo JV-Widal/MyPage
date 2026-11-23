@@ -1,10 +1,5 @@
-/* ==========================================================================
-   Portfólio Profissional — João Vitor de Campos Widal Sanchez
-   Folha de estilos principal (CSS3 puro, responsivo, acessível)
-   ========================================================================== */
-
 :root {
-  /* Paleta de cores — Tema escuro azul-marinho / grafite com destaque ciano/azul */
+  
   --bg-primary: #0b1120;
   --bg-secondary: #0f172a;
   --bg-card: #131c31;
@@ -25,11 +20,11 @@
   --border-subtle: rgba(148, 163, 184, 0.14);
   --border-hover: rgba(148, 163, 184, 0.28);
 
-  /* Tipografia */
+  
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
-  /* Layout e espaçamentos */
+  
   --container-max: 1120px;
   --header-height: 4.5rem;
   --section-py: 5.5rem;
@@ -44,20 +39,16 @@
   --space-10: 2.5rem;
   --space-12: 3rem;
 
-  /* Bordas e sombras */
+  
   --radius-sm: 0.375rem;
   --radius-md: 0.625rem;
   --radius-lg: 0.875rem;
   --shadow-card: 0 10px 30px -10px rgba(2, 6, 23, 0.6);
 
-  /* Transições */
+  
   --transition-fast: 160ms ease;
   --transition-base: 240ms ease;
 }
-
-/* ==========================================================================
-   Reset e Base
-   ========================================================================== */
 
 *,
 *::before,
@@ -112,10 +103,6 @@ strong {
   display: none !important;
 }
 
-/* ==========================================================================
-   Acessibilidade e Foco
-   ========================================================================== */
-
 :focus-visible {
   outline: 2px solid var(--accent-primary);
   outline-offset: 3px;
@@ -151,10 +138,6 @@ strong {
   top: var(--space-4);
   outline: 2px solid var(--text-primary);
 }
-
-/* ==========================================================================
-   Utilitários de Layout
-   ========================================================================== */
 
 .container {
   width: 100%;
@@ -201,10 +184,6 @@ strong {
   font-size: 1.03125rem;
   color: var(--text-muted);
 }
-
-/* ==========================================================================
-   Botões
-   ========================================================================== */
 
 .btn {
   display: inline-flex;
@@ -270,10 +249,6 @@ strong {
 .btn-block {
   width: 100%;
 }
-
-/* ==========================================================================
-   A. Cabeçalho e Navegação
-   ========================================================================== */
 
 .site-header {
   position: sticky;
@@ -388,10 +363,6 @@ strong {
   display: block;
 }
 
-/* ==========================================================================
-   B. Hero — Apresentação Principal
-   ========================================================================== */
-
 .hero-section {
   padding-block: 5rem 5.5rem;
 }
@@ -467,7 +438,6 @@ strong {
   gap: var(--space-3);
 }
 
-/* Card de código do Hero */
 .code-card {
   background-color: var(--bg-code);
   border: 1px solid var(--border-subtle);
@@ -525,10 +495,6 @@ strong {
 .code-str {
   color: #7dd3fc;
 }
-
-/* ==========================================================================
-   C. Sobre mim
-   ========================================================================== */
 
 .about-grid {
   display: grid;
@@ -605,10 +571,6 @@ strong {
   font-weight: 500;
   color: var(--text-primary);
 }
-
-/* ==========================================================================
-   D. Competências Técnicas
-   ========================================================================== */
 
 .core-stack-banner {
   display: flex;
@@ -735,10 +697,6 @@ strong {
   border-color: var(--accent-border);
 }
 
-/* ==========================================================================
-   E. Experiência Profissional (Linha do Tempo)
-   ========================================================================== */
-
 .timeline {
   position: relative;
   display: grid;
@@ -863,10 +821,6 @@ strong {
   background-color: var(--accent-primary);
 }
 
-/* ==========================================================================
-   F. Projetos (Estrutura para cards quando ativada)
-   ========================================================================== */
-
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -939,10 +893,6 @@ strong {
 .project-link:hover {
   color: var(--accent-hover);
 }
-
-/* ==========================================================================
-   G. Formação Acadêmica & H. Cursos, Certificações e Idiomas
-   ========================================================================== */
 
 .education-grid {
   display: grid;
@@ -1058,10 +1008,6 @@ strong {
   color: var(--text-muted);
 }
 
-/* ==========================================================================
-   I. Contato
-   ========================================================================== */
-
 .contact-card {
   display: grid;
   grid-template-columns: 1.25fr 0.75fr;
@@ -1121,10 +1067,6 @@ a.detail-value:hover {
   gap: var(--space-3);
 }
 
-/* ==========================================================================
-   J. Rodapé
-   ========================================================================== */
-
 .site-footer {
   border-top: 1px solid var(--border-subtle);
   background-color: var(--bg-primary);
@@ -1160,10 +1102,6 @@ a.detail-value:hover {
   color: var(--accent-primary);
   border-color: var(--accent-border);
 }
-
-/* ==========================================================================
-   Responsividade
-   ========================================================================== */
 
 @media (max-width: 960px) {
   .hero-grid,
@@ -1243,10 +1181,6 @@ a.detail-value:hover {
     left: calc(-1 * var(--space-6) + 0.15rem);
   }
 }
-
-/* ==========================================================================
-   Preferência por movimento reduzido (Acessibilidade)
-   ========================================================================== */
 
 @media (prefers-reduced-motion: reduce) {
   html {
